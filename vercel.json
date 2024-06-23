@@ -3,6 +3,6 @@
   "devCommand": "gulp",
     "installCommand": "yarn install",
    "outputDirectory": "dist",
-    "version": 1
+    "version": 2
 
 }
