@@ -1,0 +1,8 @@
+{
+  "buildCommand": "gulp build",
+  "devCommand": "gulp",
+    "installCommand": "yarn install",
+   "outputDirectory": "dist",
+    "version": 1
+
+}
