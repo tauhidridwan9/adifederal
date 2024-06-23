@@ -1,0 +1,50 @@
+{% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+{% import "pages/freelancer/_hero.njk" as HeroSection %}
+{% import "pages/freelancer/_about.njk" as AboutSection %}
+{% import "pages/freelancer/_client.njk" as ClientSection %}
+{% import "pages/freelancer/_work-process.njk" as WpSection %}
+{% import "pages/freelancer/_cta.njk" as CtaSection %}
+{% import "pages/freelancer/_case-study.njk" as CaseStudySection %}
+{% import "pages/freelancer/_service.njk" as ServiceSection %}
+{% import "pages/freelancer/_testimonial.njk" as TestimonialSection %}
+{% import "pages/freelancer/_footer.njk" as FooterSection %}
+{% block main %}
+  <!-- Header Section Start -->
+  {{Header.render(freelancer)}}
+  <!-- Header Section End -->
+  
+  <!-- Header Section Start -->
+  {{HeroSection.render()}}
+  <!-- Header Section End -->
+  <!-- About Section Start -->
+  {{AboutSection.render()}}
+  <!-- About Section End -->
+  <!-- ClientSection Start -->
+  {{ClientSection.render()}}
+  <!-- ClientSection End -->
+  <!-- Workprocess Start -->
+  {{WpSection.render()}}
+  <!-- Workprocess End -->
+  <!-- CtaSection Start -->
+  {{CtaSection.render()}}
+  <!-- CtaSection End -->
+  <!-- Case Study Section Start -->
+  {{CaseStudySection.render()}}
+  <!-- Case Study Section End -->
+  <!-- Service Section Start -->
+  {{ServiceSection.render()}}
+  <!-- Service Section End -->
+  <!-- Testimonial Section Start -->
+  {{TestimonialSection.render()}}
+  <!-- Testimonial Section End -->
+  <!-- Footer Section Start -->
+  {{FooterSection.render()}}
+  <!-- Footer Section End -->
+    <!-- Theme Switcher button -->
+  <div class="theme-change-button">
+    <div class="toggle-button-switcher bg-gray-900">
+    <input type="checkbox" class="toggle-button">
+    </div>
+  </div>
+{% endblock %}

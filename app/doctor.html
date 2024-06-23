@@ -1,0 +1,54 @@
+{% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+{% import "pages/doctor/_hero.njk" as HeroSection %}
+{% import "pages/doctor/_about.njk" as AboutSection %}
+{% import "pages/doctor/_work.njk" as WorkSection %}
+{% import "pages/doctor/_award.njk" as AwardSection %}
+{% import "pages/doctor/_event.njk" as EventSection %}
+{% import "pages/doctor/_cta.njk" as CtaSection %}
+{% import "pages/doctor/_footer.njk" as FooterSection %}
+{% import "pages/doctor/_book.njk" as BookSection %}
+{% import "pages/doctor/_success.njk" as SuccessSection %}
+{% import "pages/doctor/_testimonial.njk" as TestimonialSection %}
+
+{% block main %}
+  <!-- Header Section Start -->
+  {{Header.render(doctor)}}
+  <!-- Header Section End -->
+  <!-- Hero Section Start -->
+  {{HeroSection.render()}}
+  <!-- Hero Section End -->
+  <!-- About Section Start -->
+  {{AboutSection.render()}}
+  <!-- About Section End -->
+  <!-- Work Section Start -->
+  {{WorkSection.render()}}
+  <!-- Work Section End -->
+  <!-- Testimonial Section Start -->
+  {{TestimonialSection.render()}}
+  <!-- Testimonial Section End -->
+  <!-- Award Section Start -->
+  {{AwardSection.render()}}
+  <!-- Award Section End -->
+  <!-- Book Section Start -->
+  {{BookSection.render()}}
+  <!-- Book Section End -->
+  <!-- Success Section Start -->
+  {{SuccessSection.render()}}
+  <!-- Success Section End -->
+  <!-- Event Section Start -->
+  {{EventSection.render()}}
+  <!-- Event Section End -->
+  <!-- CTA Section Start -->
+  {{CtaSection.render()}}
+  <!-- CTA Section End -->
+  <!-- Footer Section Start -->
+  {{FooterSection.render()}}
+  <!-- Footer Section End -->
+        <!-- Theme Switcher button -->
+  <div class="theme-change-button">
+    <div class="toggle-button-switcher bg-secondary-500">
+    <input type="checkbox" class="toggle-button">
+    </div>
+  </div>
+{% endblock %}

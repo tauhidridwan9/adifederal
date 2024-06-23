@@ -1,0 +1,50 @@
+{% macro render(root, elemroot, hideMegamenu, dropdownStyle2, megamenuPosition) %}
+    <ul class="site-menu-main">
+        <li class="nav-item">
+            <a href="index.html" class="nav-link-item">Home
+                
+            </a>
+
+        </li>
+        <li class="nav-item nav-item-has-children">
+            <a href="#" class="nav-link-item drop-trigger">Services
+                <i class="fas fa-angle-down"></i>
+            </a>
+            <ul class="sub-menu" id="submenu-1">
+                <li class="sub-menu--item">
+                    <a href="program.html">Program Management</a>
+                </li>
+                <li class="sub-menu--item">
+                    <a href="supply.html">Supply Chain Management</a>
+                </li>
+                <li class="sub-menu--item">
+                    <a href="cyber.html">Cybersecurity</a>
+                </li>
+                <li class="sub-menu--item">
+                    <a href="enterprise.html">Enterprise IT</a>
+                </li>
+                <li class="sub-menu--item">
+                    <a href="enginering.html">System Engineering & Technical Assistance</a>
+                </li>
+
+            </ul>
+        </li>
+        <li class="nav-item nav-item-has-children">
+            <a href="about.html" class="nav-link-item drop-trigger">About
+               
+            </a>
+
+        </li>
+
+        <li class="nav-item nav-item-has-children">
+            <a href="article.html" class="nav-link-item drop-trigger">Careers
+                
+            </a>
+
+        </li>
+        <li class="nav-item nav-item-has-children">
+            <a href="contact.html" class="nav-link-item drop-trigger">Contact
+            </a>
+        </li>
+    </ul>
+{% endmacro %}

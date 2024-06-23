@@ -1,0 +1,42 @@
+{% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+{% import "pages/resume/_hero.njk" as HeroSection %}
+{% import "pages/resume/_about.njk" as AboutSection %}
+{% import "pages/resume/_testimonial.njk" as TestimonialSection %}
+{% import "pages/resume/_resume.njk" as ResumeSection %}
+{% import "pages/resume/_project.njk" as ProjectSection %}
+{% import "pages/resume/_cta.njk" as CtaSection %}
+{% import "pages/resume/_footer.njk" as FooterSection %}
+
+{% block main %}
+  <!-- Header Section Start -->
+  {{Header.render(resume)}}
+  <!-- Header Section End -->
+  <!-- Hero Section Start -->
+  {{HeroSection.render()}}
+  <!-- Hero Section End -->
+  <!-- About Section Start -->
+  {{AboutSection.render()}}
+  <!-- About Section End -->
+  <!-- Testimonial Section Start -->
+  {{TestimonialSection.render()}}
+  <!-- Testimonial Section End -->
+  <!-- Resume Section Start -->
+  {{ResumeSection.render()}}
+  <!-- Resume Section End -->
+  <!-- Project Section Start -->
+  {{ProjectSection.render()}}
+  <!-- Project Section End -->
+  <!-- Cta Section Start -->
+  {{CtaSection.render()}}
+  <!-- Cta Section End -->
+  <!-- Footer Section Start -->
+  {{FooterSection.render()}}
+  <!-- Footer Section End -->
+  <!-- Theme Switcher button -->
+  <div class="theme-change-button">
+    <div class="toggle-button-switcher bg-primary-500">
+    <input type="checkbox" class="toggle-button">
+    </div>
+  </div>
+{% endblock %}

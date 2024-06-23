@@ -1,0 +1,53 @@
+{% extends "template.njk" %} {% import "components/Header/_header.njk" as Header
+%} {% import "pages/enginering/_hero.njk" as HeroSection %}  {% import
+"pages/enginering/_about.njk" as AboutSection %} {% import
+"pages/enginering/_award.njk" as AwardSection %} {% import
+"pages/enginering/_service.njk" as ServiceSection %}  {% import
+"pages/enginering/_work.njk" as WorkSection %} {% import
+"pages/enginering/_blog.njk" as BlogSection %} {% import
+"pages/enginering/_testimonial.njk" as TestimonialSection %} {% import
+"pages/enginering/_contact.njk" as ContactSection %} {% import
+"pages/enginering/_cta.njk" as CtaSection %} {% import
+"pages/enginering/_footer.njk" as FooterSection %} {% block main %}
+<!-- Header Section Start -->
+{{Header.render(designer)}}
+<!-- Header Section End -->
+<!-- Hero Section Start -->
+{{HeroSection.render()}}
+<!-- Hero Section End -->
+
+<!-- About Section Start -->
+{{AboutSection.render()}}
+<!-- About Section End -->
+<!-- Award Section Start -->
+{{AwardSection.render()}}
+<!-- Award Section End -->
+<!-- Service Section Start -->
+{{ServiceSection.render()}}
+<!-- Service Section End -->
+<!-- Work Section Start -->
+{{WorkSection.render({ sectionClass:"bg-ui-linear-gradient", titleChange:"Core Values" })}}
+<!-- Work Section End -->
+
+<!-- Testimonial Section Start -->
+{{TestimonialSection.render()}}
+<!-- Testimonial Section End -->
+<!--Cta Section Start -->
+{{CtaSection.render()}}
+<!-- Cta Section End -->
+<!-- Blog Section Start -->
+{{BlogSection.render()}}
+<!-- Blog Section End -->
+<!-- Contact Section Start -->
+{{ContactSection.render()}}
+<!-- Contact Section End -->
+<!-- Footer Section Start -->
+{{FooterSection.render()}}
+<!-- Footer Section End -->
+  <!-- Theme Switcher button -->
+  <div class="theme-change-button">
+    <div class="toggle-button-switcher bg-tertiary-500">
+    <input type="checkbox" class="toggle-button">
+    </div>
+  </div>
+{% endblock %}
