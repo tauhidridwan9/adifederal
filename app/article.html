@@ -1,6 +1,7 @@
 {% extends "template.njk" %}
 {% import "components/Header/_header.njk" as Header %}
 {% import "pages/article/_case-study.njk" as CaseStudy %}
+{% import "pages/contact/_contact.njk" as Contact %}
 {% import "pages/designer/_footer.njk" as FooterSection %}
 {% block main %}
   <!-- Header Section Start -->
@@ -9,6 +10,7 @@
   <!-- Case Study Section Start -->
   {{CaseStudy.render(developer)}}
   <!-- Case Study Section End -->
+{{Contact.render(developer)}}
   <!-- Footer Section Start -->
   {{FooterSection.render({
     sectionClass:"dev-footer-area--modifi"
