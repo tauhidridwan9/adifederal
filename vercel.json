@@ -1,7 +1,6 @@
 {
-  "buildCommand": "gulp build",
-  "devCommand": "gulp",
-    "installCommand": "yarn install",
+  "buildCommand": "npm run build",
+  "installCommand": "yarn install",
    "outputDirectory": "dist",
     "version": 2
 
